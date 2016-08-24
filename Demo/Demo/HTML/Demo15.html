@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/Demo15.js"></script>
+    <link href="/CSS/Styles.css" rel="stylesheet" />
+
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <ul>
+            <li ng-repeat="country in countries" ng-init="parentIndex = $index"> 
+                {{country.name}}
+                <ul>
+                    <li ng-repeat="city in country.cities"> 
+                        {{city.name}} ParentIndex={{parentIndex}}, Index= {{$index}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

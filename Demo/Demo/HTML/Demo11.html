@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/Demo11.js"></script>
+    <link href="/CSS/Styles.css" rel="stylesheet" />
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        Search:<input type="text" placeholder="Search Text" ng-model="searchText.city" /><br /><br />
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="emp in employees|filter:searchText">
+                <td>{{emp.name}}</td>
+                <td>{{emp.DOB|date:"MM/dd/yyyy"}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.city}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/Demo16.js"></script>
+    <link href="/CSS/Styles.css" rel="stylesheet" />
+
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <select ng-model="employeeView">
+            <option value="/HTML/EmployeeTable.html">Table</option>
+            <option value="/HTML/EmployeeList.html">List</option>
+        </select>
+        <br /><br />
+        <div ng-include="employeeView"></div>
+    </div>
+</body>
+</html>

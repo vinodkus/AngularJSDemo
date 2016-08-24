@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/Demo10.js"></script>
+    <link href="/CSS/Styles.css" rel="stylesheet" />
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">        
+        <table>
+            <thead>
+                <tr>
+                    <th ng-click="sortData('name')">Name<div ng-class="getSortClass('name')"></div> </th>
+                    <th ng-click="sortData('DOB')">DOB<div ng-class="getSortClass('DOB')"></div> </th>
+                    <th ng-click="sortData('gender')">Gender<div ng-class="getSortClass('gender')"></div> </th>
+                    <th ng-click="sortData('salary')">Salary<div ng-class="getSortClass('salary')"></div> </th>
+                </tr>
+            </thead>
+            <tr ng-repeat="emp in employees|orderBy:sortColumn:reverseSort">
+                <td>{{emp.name}}</td>
+                <td>{{emp.DOB|date:"dd/MM/yyyy"}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.salary}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

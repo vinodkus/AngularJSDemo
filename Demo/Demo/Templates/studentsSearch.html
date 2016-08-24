@@ -1,0 +1,15 @@
+﻿<h1>Student Search U</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>City</th>
+    </tr>
+    <tr ng-repeat="student in studentsSearchCtrl.students">
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.gender}}</td>
+        <td>{{student.city}}</td>
+    </tr>
+</table>

@@ -1,0 +1,12 @@
+D:\vinod\Test\AngularJS1\Demo\Demo\bin\Demo.dll.config
+D:\vinod\Test\AngularJS1\Demo\Demo\bin\Demo.dll
+D:\vinod\Test\AngularJS1\Demo\Demo\bin\Demo.pdb
+D:\vinod\Test\AngularJS1\Demo\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+D:\vinod\Test\AngularJS1\Demo\Demo\obj\Debug\Demo.dll
+D:\vinod\Test\AngularJS1\Demo\Demo\obj\Debug\Demo.pdb
+D:\D drive\vinod\Test\AngularJS1\Demo\Demo\bin\Demo.dll.config
+D:\D drive\vinod\Test\AngularJS1\Demo\Demo\bin\Demo.dll
+D:\D drive\vinod\Test\AngularJS1\Demo\Demo\bin\Demo.pdb
+D:\D drive\vinod\Test\AngularJS1\Demo\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+D:\D drive\vinod\Test\AngularJS1\Demo\Demo\obj\Debug\Demo.dll
+D:\D drive\vinod\Test\AngularJS1\Demo\Demo\obj\Debug\Demo.pdb
